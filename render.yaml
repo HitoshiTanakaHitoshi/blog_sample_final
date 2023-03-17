@@ -7,7 +7,7 @@ databases:
 
 services:
   - type: web
-    name: twitter_gazou
+    name: twitter_gazou_user
     env: python
     plan: free
     branch: main

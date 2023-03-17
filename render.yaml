@@ -1,3 +1,8 @@
+databases:
+  - name: blog-sample-db
+    plan: free
+    databaseName: blog_sample
+    user: blog_sample
 
 
 services:

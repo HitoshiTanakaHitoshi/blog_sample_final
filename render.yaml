@@ -1,17 +1,11 @@
 
 
-databases:
-  - name: blog-sample-db
-    plan: free
-    databaseName: blog_sample
-    user: blog_sample
-
 services:
   - type: web
     name: twitter_gazou
     env: python
     plan: free
-    branch: production
+    branch: main
     buildCommand: "./build.sh"
     startCommand: "gunicorn config.wsgi:application"
     envVars:
